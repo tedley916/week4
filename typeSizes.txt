@@ -1,0 +1,35 @@
+
+
+Size of char = 2 bytes.
+Size of byte = 1 bytes., Min value = -128, Max value = 127
+Size of short = 2 bytes., Min value = -32768, Max value = 32767
+Size of int: = 4 bytes., Min value = -2147483648, Max value = 2147483647
+Size of long: = 8 bytes., Min value = -9223372036854775808, Max value = 9223372036854775807
+Size of float: = 4 bytes., Min value = 1.4E-45, Max value = 3.4028235E38
+Size of double: = 8 bytes., Min value = 4.9E-324, Max value = 1.7976931348623157E308
+
+System.out.print("Size of char = " + (Char.SIZE/8) + " bytes.”);
+
+System.out.print("Size of byte = " + (Byte.SIZE/8) + " bytes.");
+System.out.print (", Min value = " + Byte.MIN_VALUE);
+System.out.println (", Max value = " + Byte.MAX_VALUE);
+
+System.out.print("Size of short = " + (Short.SIZE/8) + " bytes.");
+System.out.print (", Min value = " + Short.MIN_VALUE);
+System.out.println (", Max value = " + Short.MAX_VALUE);
+
+System.out.print("Size of int: = " + (Integer.SIZE/8) + " bytes.");
+System.out.print (", Min value = " + Integer.MIN_VALUE);
+System.out.println (", Max value = " + Integer.MAX_VALUE);
+
+System.out.print("Size of long: = " + (Long.SIZE/8) + " bytes.");
+System.out.print (", Min value = " + Long.MIN_VALUE);
+System.out.println (", Max value = " + Long.MAX_VALUE);
+
+System.out.print("Size of float: = " + (Float.SIZE/8) + " bytes.");
+System.out.print (", Min value = " + Float.MIN_VALUE);
+System.out.println (", Max value = " + Float.MAX_VALUE);
+
+ System.out.print("Size of double: = " + (Double.SIZE/8) + " bytes.");
+ System.out.print (", Min value = " + Double.MIN_VALUE);
+ System.out.println (", Max value = " + Double.MAX_VALUE);
