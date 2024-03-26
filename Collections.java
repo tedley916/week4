@@ -36,7 +36,10 @@ public class Collections {
 		}
 
 	
-	
+	/**
+	 * @see https://www.baeldung.com/java-suppresswarnings-valid-names
+	 */
+	@SuppressWarnings("removal")
 	public static void example1() {
 		// old way
 		//@SuppressWarnings("removal")
