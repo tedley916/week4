@@ -25,7 +25,7 @@ public class BasicLists {
 			example3();
 			break;
 		case "example4" :
-			example3();
+			example4();
 			break;
 		default:
 			System.out.print("Invalid command line argument. legal arguments: example0 - example6");

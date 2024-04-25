@@ -18,100 +18,23 @@ public class Collections {
 			
 			final String clArg = args[0];
 			switch (clArg) {
-			case "example1" :   
+			case "example1" :   // sets
 				example1();
 				break;
-			case "example2" :   // sets
+			case "example2" :   //lists
 				example2();
 				break;
-			case "example3" :   //lists
+			case "example3" :   // Maps
 				example3();
-				break;
-			case "example4" :   // Maps
-				example4();
 				break;
 			default:
 				System.out.print("Invalid command line argument.  Valid arguments are example1, example2, example3, example4");
 			}
 		}
 
-	
-	/**
-	 * @see https://www.baeldung.com/java-suppresswarnings-valid-names
-	 */
-	@SuppressWarnings("removal")
-	public static void example1() {
-		// old way
-		//@SuppressWarnings("removal")
-		Integer x1 = new Integer (2345678);     
-		
-		// new way
-		// autoboxing value of primitive class assigned to wrapper class
-		Integer x2 = 2345678;					
-		
-		System.out.println ("1. " + x1.equals(x2));
-		System.out.println ("2. " + (x1 == x2));
-		
-		// unboxing - value of the wrapper class assigned to a primitive
-		int x3 = x1;							
-		
-		System.out.println ("3. " + x1.equals(x3));
-		System.out.println ("4. " + (x1 == x3));
-		
-		// useful tip   parseInt
-		String milesToSunStr = "93,000,000";
-		int milesToSunInt = Integer.parseInt(milesToSunStr.replace(",", ""));
-		System.out.println (milesToSunInt);
-		
-		
-		/**
-		 * Wrapper classes
-		 * Primitive      Wrapper
-		 * ---------      --------
-         * boolean        Boolean
-		 * char           Character
-		 * byte           Byte
-		 * short          Short
-		 * int            Integer
-		 * long           Long
-		 * float          Float
-		 * double         Double
-		 */
-		System.out.println("autoboxing and unboxing");
-		Byte b1 = 64;
-		byte b2 = b1;
-		b2 = b1.byteValue();
-		System.out.println("5.  " + b2);
-		
-		Boolean boo1 = new Boolean(true);
-		boo1 = true;
-		boolean boo2 = boo1;
-		boo2 = boo1.booleanValue();
-		System.out.println ("6.  " + boo2);
-		
-		Character c1 = new Character('a');
-		c1 = 'a';
-		char c2 = c1;
-		c2 = c1.charValue();
-		System.out.println("7.  " + c2);
-		
-		Short s1 = new Short((short)64);
-		s1 = 64;
-		short s2 = s1;
-		s2 = s1.shortValue();
-		System.out.println ("8. " + s2);
-		
-		Double d1 = new Double(3.1415);
-		d1 = 3.1415;
-		double d2 = d1;
-		d2 = d1.doubleValue();
-		System.out.println ("9.  " + d2);
-		
-
-	}
 
 	@SuppressWarnings("unused")
-	public static void example2() {
+	public static void example1() {
 		System.out.println("SETS");
 		Set<String> trees = new HashSet<>();
 		trees.add("Birch");
@@ -130,7 +53,6 @@ public class Collections {
 		
 		trees.remove("Pretty flowers");
 		
-		Iterator<String> iter = trees.iterator();		
 		
 		boolean crash = false;
 		if (crash) {
@@ -152,6 +74,7 @@ public class Collections {
 		
 		System.out.println ("\n---- Loop with iterator -----");
 		
+		Iterator<String> iter = trees.iterator();		
 		String str = "";
 		while (iter.hasNext())   // while ther's another object in the collection
 		{
@@ -166,7 +89,7 @@ public class Collections {
 		
 	}	
 	
-	public static void example3() {
+	public static void example2() {
 		System.out.println("LISTS\n");
 		List<String> mountainRanges = new ArrayList<>();
 		
@@ -205,7 +128,7 @@ public class Collections {
 		}
 	}
 	
-	public static void example4() {
+	public static void example3() {
 		System.out.println("MAPS\n");
 		Map<String, String> stateCapitals = new HashMap<String, String>();
 		stateCapitals.put("AZ", "Phoenix");

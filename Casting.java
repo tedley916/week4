@@ -22,7 +22,8 @@ public class Casting {
 	// note the printf format string
 	private static void primitives() {
 		System.out.println ("\t\t--- Primitive Variable sizes in bytes ---\n");
-		System.out.format ("%s%8s%25s%26s", "Primitive Type",  "bytes", "Min Size", "Max Size\n");
+		System.out.format ("%s%8s%25s%26s", "Primitive Type",  "Bytes", "Min Size", "Max Size\n");
+		System.out.format ("%s%8s%25s%26s", "--------------",  "-----", "--------", "--------\n");
 		System.out.printf ("%-8s%14d%25d%25d%n", "byte", Byte.SIZE / 8, Byte.MIN_VALUE, Byte.MAX_VALUE);
 		System.out.printf ("%-8s%14d%25s%25s%n", "char", Character.SIZE / 8, "n/a", "n/a");
 		System.out.printf ("%-8s%14d%25d%25d%n", "short", Short.SIZE / 8, Short.MIN_VALUE, Short.MAX_VALUE);

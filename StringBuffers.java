@@ -22,7 +22,7 @@ public class StringBuffers {
 			break;
 		case "example3" :
 			example3();
-			break;
+			break;	
 		default:
 			System.out.print("Invalid command line argument.  Valid arguments are example1, example2, example3, example4");
 		}
@@ -36,7 +36,7 @@ public class StringBuffers {
 		System.out.println ("3. capacity is : " + sb.capacity() );
 		sb.insert(16, "Flintstone ");
 		System.out.println ("4. " + sb);
-		sb.replace(11,15, "Fredrick xJosef");  // start, end-1
+		sb.replace(11,15, "Fredrick xJosef");  // start, end+1
 		System.out.println ("5. " + sb);
 		
 		// no more array ma nipulations to reverse strings.  
