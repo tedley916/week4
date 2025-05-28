@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Casting {
 
 	public static void main(String[] args) {
-		int pick = 1;
+		int pick = 2;
 		if (pick == 1) {
 			primitives();
 		}
@@ -34,7 +34,7 @@ public class Casting {
 	}
 
 	
-	// mastery question #16, lets talk about casting
+	// mastery question #15, lets talk about casting
 	public static void casting() {
 		List<Character> alphabet = new ArrayList<>();
 		for (int i = 97; i < (97+26); i++) {
@@ -42,6 +42,8 @@ public class Casting {
 		}
 		alphabet.remove(0);
 		System.out.println (alphabet);
+		
+		System.out.println ("The binary value 67 is used to represent the letter 'C' -> " + (char)(65+2));
 		
 		System.out.println("\n\n\n\n\n\n\n\n\n");
 		System.out.println ("1. implicit casting  Larger = smaller");

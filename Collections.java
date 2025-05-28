@@ -76,7 +76,7 @@ public class Collections {
 		
 		Iterator<String> iter = trees.iterator();		
 		String str = "";
-		while (iter.hasNext())   // while ther's another object in the collection
+		while (iter.hasNext())   // while there's another object in the collection
 		{
 			str = iter.next();   // fetch the next object in the collection
 			if (str != null && str.equals("Chocolate cake"))
@@ -99,7 +99,7 @@ public class Collections {
 		mountainRanges.add("Alps");
 		mountainRanges.add("Alaska Range");
 		mountainRanges.add("Cascade Range");
-		mountainRanges.add(0, "Himalayas");		
+		mountainRanges.add(0, "Himalayas");		  // advantage of lists over arrays
 		mountainRanges.add("Sierra Nevada");
 		mountainRanges.add("Ural Mountains");
 		mountainRanges.add("Chocolate cake");
@@ -140,7 +140,7 @@ public class Collections {
 		stateCapitals.put("ID", "Boise");
 		stateCapitals.put("DC", "The White House???");
 		stateCapitals.put("TX", "Austin");
-		stateCapitals.put("CA", "Los Angeles");        // note the duplicate key
+		stateCapitals.put("CA", "Los Angeles");        
 		stateCapitals.put("CA", "San Fransisco");      // note the duplicate key
 		stateCapitals.put("CA", "Sacramento");         // note the duplicate key
 		stateCapitals.put("OR", "Salem");		
@@ -158,7 +158,7 @@ public class Collections {
 			System.out.println (key + " : " + stateCapitals.get(key));
 		}
 		
-		System.out.println ("Then iterate over keyset");
+		System.out.println ("\nThen iterate over keyset");
 		Collection<String> states = stateCapitals.values();
 		for (String state : states) {
 			System.out.println (state);

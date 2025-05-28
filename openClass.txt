@@ -1,0 +1,56 @@
+
+
+7
+
+    List<Integer> sumTotal = new ArrayList<Integer>();
+    sumTotal.add(num1);
+    sumTotal.add(num2);
+    sumTotal.add(num3);
+    sumTotal.add(num4);
+    
+    sumTotal.add(
+        sumTotal.get(0) +
+        sumTotal.get(1) +
+        sumTotal.get(2) +
+        sumTotal.get(3) 
+        );
+
+    System.out.println (sumTotal);
+
+9
+
+    if (endNum < 0) {
+        System.out.println("Your List cannot be created with a number less than one.");
+        return;
+    }
+
+    List<Integer> newList = new ArrayList<Integer>();
+    for (int idx = 1; idx <= endNum; idx++) {
+        newList.add(idx);
+    }
+    System.out.println ("The first number in the List is " + newList.get(0));
+    System.out.println ("The last number in the List is " + newList.get(newList.size()-1) );
+
+
+11
+
+
+    List<String> newList = new ArrayList<String>();
+    for (int idx = 0; idx < words.size(); idx++) {
+        if (idx % 2 == 0) {
+            newList.add(words.get(idx));
+        }
+    }
+		
+		
+		
+17
+
+
+    List<Integer> factorNum = new ArrayList<Integer>();
+	for (int idx = 1; idx <= userNumber; idx++) {
+		if (userNumber % idx == 0) {
+			factorNum.add(idx);
+		}
+	}
+	System.out.println(factorNum);

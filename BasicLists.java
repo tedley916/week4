@@ -67,21 +67,23 @@ public class BasicLists {
 		mStates.clear();
 		System.out.println (mStates);
 		
-		mStates.add("Maine");
-		mStates.add("Maryland");
 		mStates.add("Massachusetts");		
 		mStates.add("Michigan");
-		mStates.add("Minnesota");
-		mStates.add("Mississippi");
 		mStates.add("Missouri");
 		mStates.add("Montana");
+		mStates.add("Maine");
+		mStates.add("Maryland");
+		mStates.add("Minnesota");
+		mStates.add("Mississippi");
+		System.out.println ("note order");
+		System.out.println (mStates);
 		
 		System.out.println("contains \"California\" : " + mStates.contains("California"));
 		
 		System.out.println("Get second state in the list : " + mStates.get(1));
 		
 		System.out.println("Get the index of Mississippi : " + mStates.indexOf(new String("Mississippi")));
-		System.out.println("Get the index of Alabama : " + mStates.indexOf(new String("Alabama")));
+		System.out.println("Get the index of Alabama : " + mStates.indexOf("Alabama"));
 	
 		System.out.println("Is the list empty : " + mStates.isEmpty());
 		
